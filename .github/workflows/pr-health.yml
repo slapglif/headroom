@@ -3,9 +3,6 @@ name: PR Governance
 on:
   pull_request_target:
     types: [opened, edited, reopened, synchronize, ready_for_review, converted_to_draft]
-  schedule:
-    # Keep labels fresh even when base branches move or checks finish later.
-    - cron: '23 14 * * 1-5'
   workflow_dispatch:
 
 permissions:
