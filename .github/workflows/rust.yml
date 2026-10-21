@@ -20,10 +20,6 @@ on:
       - 'tests/parity/**'
       - 'Makefile'
       - '.github/workflows/rust.yml'
-  schedule:
-    # Nightly parity run at 07:17 UTC (weekdays only). Phase 0 allows failure.
-    - cron: '17 7 * * 1-5'
-
 concurrency:
   group: rust-${{ github.ref }}
   cancel-in-progress: true
